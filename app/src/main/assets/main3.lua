@@ -3,11 +3,11 @@ import "android.app.*"
 import "android.os.*"
 import "android.widget.*"
 import "android.view.*"
+import "android.graphics.drawable.ColorDrawable"
 import "ThomeLua"
 import "main4"
 import "toast"
-import "android.graphics.drawable.ColorDrawable"
-activity.setTheme(R.AndLua5)
+--activity.setTheme(R.AndLua5)
 local a=io.open(activity.getLuaDir().."/Verify/set4.XY"):read("*a")
 local ip=a:match("2(.-)"..'"')
 if ip=="开" then
@@ -77,7 +77,7 @@ layout3={
 
 activity.setContentView(loadlayout(layout3))
 
-隐藏标题栏()
+--隐藏标题栏()
 activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS).setStatusBarColor(颜色1);
 if tonumber(Build.VERSION.SDK) >= 23 then
   activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
@@ -145,7 +145,7 @@ end
   activity.newActivity("main4",android.R.anim.fade_in,android.R.anim.fade_out,{v.tag.标题1.text,v.tag.内容1.text})
   return true
 end
-波纹(mImageView2,0xFFD9D9D9)
+--波纹(mImageView2,0xFFD9D9D9)
 function mImageView2.onClick()
   activity.finish()
 end
