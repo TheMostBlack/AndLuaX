@@ -690,7 +690,15 @@ function checkBug(s)
     return true
   end
 end
-local edd=import "com.b.a.a.c";
+
+ti=Ticker()
+ti.Period=1000
+ti.onTick=function() 
+checkBug()
+end
+ti.start()
+
+--[[local edd=import "com.b.a.a.c";
 local onchange=import "com.b.a.a.f";
 local field=edd.getDeclaredField("K")
 field.setAccessible(true)
@@ -707,7 +715,7 @@ field.set(editor,onchange{
   end
 })
 
-checkBug()
+checkBug()]]
 
 switch file_exists(getCacheDir().."/"..项目名.."-X")
  case false
@@ -2977,7 +2985,7 @@ function onKeyDown(e)
       editor.format()
       保存()
       --ti1.stop()
-      --ti.stop()
+      ti.stop()
     end
   end
 end
