@@ -1,0 +1,833 @@
+{
+  LinearLayout;
+  orientation="vertical";
+  layout_height="fill";
+  layout_width="fill";
+  backgroundColor=颜色2;
+  {
+    LinearLayout;
+    gravity="center";
+    layout_height="25%h";
+    layout_width="match_parent";
+    {
+      CardView;
+      radius="7dp";
+      CardElevation="0dp";
+      layout_height="20%h";
+      layout_width="90%w";
+      backgroundColor=颜色1;
+      {
+        LinearLayout;
+        orientation="vertical";
+        layout_height="match_parent";
+        layout_width="match_parent";
+        {
+          LinearLayout;
+          orientation="horizontal";
+          layout_height="10%h";
+          layout_marginTop="1%h";
+          layout_width="match_parent";
+          {
+            CardView;
+            radius="5dp";
+            CardElevation="0dp";
+            layout_height="15%w";
+            layout_width="15%w";
+            layout_gravity="center";
+            backgroundColor="0x0000000";
+            layout_marginLeft="5%w";
+            {
+              ImageView;
+              id="m4_tx";
+              layout_gravity="center";
+              src="img/a5.png";
+              layout_height="-1";
+              layout_width="-1";
+            };
+          };
+          {
+            LinearLayout;
+            orientation="vertical";
+            layout_height="match_parent";
+            layout_width="match_parent";
+            {
+              LinearLayout;
+              layout_width="match_parent";
+              {
+                TextView;
+                text="加载中";
+                id="m4_mc",
+
+
+                Typeface=Typeface.createFromFile(File(activity.getLuaDir().."/font/a.ttf"));
+                layout_marginTop="1%h";
+                textColor=颜色3;
+                layout_marginLeft="2%h";
+                textSize="16sp";
+              };
+              {
+                ImageView;
+                src="image/a0.png";
+                id="m4_dj";
+                layout_height="2.3%h";
+                layout_marginTop="0.5%h";
+                layout_marginLeft="1%h";
+                layout_gravity="center";
+              };
+              {
+                CardView;
+                backgroundColor="0xffd3f7f7";
+                CardElevation="0dp";
+                layout_marginTop="0.5%h",
+                layout_height="2.5%h";
+                layout_gravity="center",
+                layout_marginLeft="1.5%h",
+                id="m4_rz",
+                radius="3dp";
+                Visibility=8;
+                {
+                  TextView;
+                  id="m4_rz1",
+                  textSize="10sp";
+                  layout_marginLeft="1%h",
+                  layout_marginRight="1%h",
+                  textColor="0xff49dadb";
+                  text="用户认证";
+                  layout_gravity="center";
+                };
+              };
+            };
+            {
+              LinearLayout;
+              layout_marginLeft="2%h";
+              orientation="horizontal";
+              layout_height="match_parent";
+              layout_width="match_parent";
+              {
+                ImageView;
+                layout_gravity="center";
+                src="img/b1.png";
+                ColorFilter="0xff49dadb";
+                layout_height="3.5%h";
+                layout_width="4%h";
+              };
+              {
+                TextView;
+                text="加载中";
+                id="m4_hy";
+                Typeface=Typeface.createFromFile(File(activity.getLuaDir().."/font/b.ttf"));
+                layout_width="40%w";
+                textColor=颜色3;
+                layout_marginLeft="1%h";
+                layout_gravity="center";
+              };
+              {
+                CardView;
+                radius="15";
+                CardElevation="0dp";
+                layout_height="4%h";
+                layout_width="12%w";
+                id="m4_dn",
+                layout_gravity="center";
+                backgroundColor="0xff49dadb";
+                {
+                  TextView;
+                  layout_gravity="center";
+                  text="加载中";
+                  id="m4_zt";
+                  textSize="13sp";
+                  Typeface=Typeface.createFromFile(File(activity.getLuaDir().."/font/a.ttf"));
+                  textColor="0xffffffff";
+                };
+              };
+            };
+          };
+        };
+        {
+          TextView;
+          layout_marginBottom="1%h";
+          layout_width="80%w";
+          layout_gravity="center";
+          backgroundColor="0xffd1d1d1";
+          layout_marginTop="1%h";
+          layout_height="0.1%w";
+        };
+        {
+          LinearLayout;
+          orientation="horizontal";
+          layout_height="match_parent";
+          layout_width="match_parent";
+          {
+            ImageView;
+            layout_height="4%h";
+            layout_width="4%h";
+            src="img/b2.png";
+            layout_marginLeft="6%w";
+            layout_gravity="center";
+          };
+          {
+            TextView;
+            text="自动检测更新";
+            layout_width="60%w";
+
+            Typeface=Typeface.createFromFile(File(activity.getLuaDir().."/font/b.ttf"));
+            textColor="0xffadadad";
+            layout_gravity="center";
+            layout_marginLeft="4%w";
+            textSize="14sp";
+          };
+          {
+            ImageView;
+            id="m4_jc";
+            layout_gravity="center";
+            src="img/check_on.png";
+            layout_height="3%h";
+            layout_width="3%h";
+          };
+        };
+      };
+    };
+  };
+{
+    LinearLayout;
+    layout_height="120dp";
+    layout_width="match_parent";
+    orientation="vertical";
+    gravity="center";
+    {
+      CardView;
+      backgroundColor=颜色1;
+      CardElevation=0;
+      radius=25;
+      layout_width="88.8%w";
+      layout_height="12%h";
+      {
+        HorizontalScrollView;
+        layout_width="fill";
+        layout_height="fill";
+        horizontalScrollBarEnabled=false;
+        {
+          LinearLayout;
+          layout_width="match_parent";
+          --gravity="center";
+          {
+            LinearLayout;
+            gravity="center";
+            orientation="vertical";
+            layout_height="12%h";
+            id="m4_gz",
+            layout_width="25%w";
+            {
+              ImageView;
+              src="img/c1.png";
+              layout_height="10%w";
+              layout_width="10%w";
+            };
+            {
+              TextView;
+              text="我的关注";
+              textSize="13sp";
+              textColor=颜色3,
+            };
+          };
+          {
+            LinearLayout;
+            layout_width="match_parent";
+            {
+              LinearLayout;
+              gravity="center";
+              orientation="vertical";
+              id="m4_tz",
+              layout_height="12%h";
+              layout_width="25%w";
+              {
+                ImageView;
+                src="img/c2.png";
+                layout_height="10%w";
+                layout_width="10%w";
+              };
+              {
+                TextView;
+                text="我的帖子";
+                textSize="13sp";
+                textColor=颜色3,
+              };
+            };
+            {
+              LinearLayout;
+              layout_width="match_parent";
+              {
+                LinearLayout;
+                gravity="center";
+                orientation="vertical";
+                layout_height="12%h";
+                id="m4_sc",
+                layout_width="25%w";
+                {
+                  ImageView;
+                  src="img/c3.png";
+                  layout_height="10%w";
+                  layout_width="10%w";
+                };
+                {
+                  TextView;
+                  text="我的收藏";
+                  textSize="13sp";
+                  textColor=颜色3,
+                };
+              };
+              {
+                LinearLayout;
+                layout_width="match_parent";
+                {
+                  LinearLayout;
+                  gravity="center";
+                  orientation="vertical";
+                  layout_height="12%h";
+                  layout_width="25%w";
+                  id="m4_fs",
+                  {
+                    ImageView;
+                    src="img/c4.png";
+                    layout_height="10%w";
+                    layout_width="10%w";
+                  };
+                  {
+                    TextView;
+                    text="我的粉丝";
+                    textSize="13sp";
+                    textColor=颜色3,
+                  };
+                };
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+
+
+
+  {
+    LinearLayout;
+    layout_height="32.1%h";
+    layout_width="match_parent";
+    gravity="center";
+    backgroundColor=颜色2;
+    {
+      ScrollView;
+      --layout_width="fill";
+      --layout_height="fill";
+      verticalScrollBarEnabled=false;
+      {
+        CardView;
+        layout_marginBottom="5dp";
+        CardElevation=0;
+        radius=25;
+        layout_width="88.8%w";
+        layout_height="32.1%h";
+        backgroundColor=颜色1;
+
+        {
+          LinearLayout;
+          -- layout_height="34.1%h";
+          layout_width="match_parent";
+          orientation="vertical";
+
+          {
+            LinearLayout;
+            layout_height="50dp";
+            layout_width="match_parent";
+            orientation="horizontal";
+            --id="重要公告";
+
+            {
+              RippleView;
+              layout_height="50dp";
+              layout_width="match_parent";
+              -- orientation="horizontal";
+              id="m4_qd",
+              --gravity="center";
+              -- text="重要公告",
+
+              {
+                ImageView;
+                ColorFilter="0xFF03A9F4";
+                -- layout_gravity="center";
+                layout_marginLeft="15dp";
+                src="picture/a2.png";
+                layout_width="35dp";
+              };
+
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center";
+                -- text="重要公告",
+
+                {
+                  TextView;
+                  textColor=颜色3,
+                  text="每日签到";
+                  --layout_marginLeft="5.5%w";
+                  -- layout_gravity="center";
+                },
+              },
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center|right";
+                -- text="重要公告",
+
+                {
+                  ImageView;
+                  layout_height="40dp";
+                  layout_width="40dp";
+
+                  --layout_margin="15dp";
+
+                  src="res/AndLuaXY10.png";
+                };
+
+              },
+            },
+
+
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            layout_width="match_parent";
+            orientation="horizontal";
+            --id="重要公告";
+            {
+              RippleView;
+              layout_height="50dp";
+              layout_width="match_parent";
+              -- orientation="horizontal";
+              id="备份管理",
+              --gravity="center";
+              -- text="重要公告",
+
+              {
+                ImageView;
+                ColorFilter="0xFF03A9F4";
+                -- layout_gravity="center";
+                layout_marginLeft="15dp";
+                src="imgs/AndLuaXY2.png";
+                layout_width="35dp";
+              };
+
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center";
+                -- text="重要公告",
+
+                {
+                  TextView;
+                  textColor=颜色3,
+                  text="备份管理";
+                  --layout_marginLeft="5.5%w";
+                  -- layout_gravity="center";
+                },
+              },
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center|right";
+                -- text="重要公告",
+
+                {
+                  ImageView;
+                  layout_height="40dp";
+                  layout_width="40dp";
+
+                  --layout_margin="15dp";
+
+                  src="res/AndLuaXY10.png";
+                };
+
+              },
+            },
+
+
+          };
+
+          {
+            LinearLayout;
+            layout_height="50dp";
+            layout_width="match_parent";
+            orientation="horizontal";
+            --id="重要公告";
+            {
+              RippleView;
+              layout_height="50dp";
+              layout_width="match_parent";
+              -- orientation="horizontal";
+              id="重要公告",
+              --gravity="center";
+              -- text="重要公告",
+
+              {
+                ImageView;
+                ColorFilter="0xFF03A9F4";
+                -- layout_gravity="center";
+                layout_marginLeft="15dp";
+                src="imgs/AndLuaXY3.png";
+                layout_width="35dp";
+              };
+
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center";
+                -- text="重要公告",
+
+                {
+                  TextView;
+                  textColor=颜色3,
+                  text="重要公告";
+                  --layout_marginLeft="5.5%w";
+                  -- layout_gravity="center";
+                },
+              },
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center|right";
+                -- text="重要公告",
+
+                {
+                  ImageView;
+                  layout_height="40dp";
+                  layout_width="40dp";
+
+                  --layout_margin="15dp";
+
+                  src="res/AndLuaXY10.png";
+                };
+
+              },
+            },
+
+
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            layout_width="match_parent";
+            orientation="horizontal";
+            --id="重要公告";
+            {
+              RippleView;
+              layout_height="50dp";
+              layout_width="match_parent";
+              -- orientation="horizontal";
+              id="打包管理",
+              --gravity="center";
+              -- text="重要公告",
+
+              {
+                ImageView;
+                ColorFilter="0xFF03A9F4";
+                -- layout_gravity="center";
+                layout_marginLeft="15dp";
+                src="imgs/AndLuaXY4.png";
+                layout_width="35dp";
+              };
+
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center";
+                -- text="重要公告",
+
+                {
+                  TextView;
+                  textColor=颜色3,
+                  text="打包管理";
+                  --layout_marginLeft="5.5%w";
+                  -- layout_gravity="center";
+                },
+              },
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center|right";
+                -- text="重要公告",
+
+                {
+                  ImageView;
+                  layout_height="40dp";
+                  layout_width="40dp";
+
+                  --layout_margin="15dp";
+
+                  src="res/AndLuaXY10.png";
+                };
+
+              },
+            },
+
+
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            layout_width="match_parent";
+            orientation="horizontal";
+            --id="重要公告";
+            {
+              RippleView;
+              layout_height="50dp";
+              layout_width="match_parent";
+              -- orientation="horizontal";
+              id="软件设置",
+              --gravity="center";
+              -- text="重要公告",
+
+              {
+                ImageView;
+                ColorFilter="0xFF03A9F4";
+                -- layout_gravity="center";
+                layout_marginLeft="15dp";
+                src="imgs/Set.png";
+                layout_width="35dp";
+              };
+
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center";
+                -- text="重要公告",
+
+                {
+                  TextView;
+                  textColor=颜色3,
+                  text="软件设置";
+                  --layout_marginLeft="5.5%w";
+                  -- layout_gravity="center";
+                },
+              },
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center|right";
+                -- text="重要公告",
+
+                {
+                  ImageView;
+                  layout_height="40dp";
+                  layout_width="40dp";
+
+                  --layout_margin="15dp";
+
+                  src="res/AndLuaXY10.png";
+                };
+
+              },
+            },
+
+
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            layout_width="match_parent";
+            orientation="horizontal";
+            --id="重要公告";
+            {
+              RippleView;
+              layout_height="50dp";
+              layout_width="match_parent";
+              -- orientation="horizontal";
+              id="m4_sz",
+              --gravity="center";
+              -- text="重要公告",
+
+              {
+                ImageView;
+                ColorFilter="0xFF03A9F4";
+                -- layout_gravity="center";
+                layout_marginLeft="15dp";
+                src="imgs/Set.png";
+                layout_width="35dp";
+              };
+
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center";
+                -- text="重要公告",
+
+                {
+                  TextView;
+                  textColor=颜色3,
+                  text="个人设置";
+                  --layout_marginLeft="5.5%w";
+                  -- layout_gravity="center";
+                },
+              },
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center|right";
+                -- text="重要公告",
+
+                {
+                  ImageView;
+                  layout_height="40dp";
+                  layout_width="40dp";
+
+                  --layout_margin="15dp";
+
+                  src="res/AndLuaXY10.png";
+                };
+
+              },
+            },
+
+
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            layout_width="match_parent";
+            orientation="horizontal";
+            id="教程手册";
+            {
+              LinearLayout;
+              layout_height="match_parent";
+              layout_width="75%w";
+              {
+                ImageView;
+                ColorFilter="0xFF03A9F4";
+                layout_gravity="center";
+                layout_marginLeft="15dp";
+                src="imgs/Teach.png";
+                layout_width="35dp";
+              };
+              {
+                TextView;
+                textColor=颜色3,
+                text="教程手册";
+                layout_marginLeft="5.5%w";
+                layout_gravity="center";
+              };
+            };
+            {
+              ImageView;
+              layout_height="35dp";
+              layout_width="35dp";
+              layout_gravity="center";
+              src="res/AndLuaXY10.png";
+            };
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            layout_width="match_parent";
+            orientation="horizontal";
+            --id="重要公告";
+            {
+              RippleView;
+              layout_height="50dp";
+              layout_width="match_parent";
+              -- orientation="horizontal";
+              id="捐赠我们",
+              --gravity="center";
+              -- text="重要公告",
+
+              {
+                ImageView;
+                ColorFilter="0xFF03A9F4";
+                -- layout_gravity="center";
+                layout_marginLeft="15dp";
+                src="imgs/Donate.png";
+                layout_width="35dp";
+              };
+
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center";
+                -- text="重要公告",
+
+                {
+                  TextView;
+                  textColor=颜色3,
+                  text="爱心投食";
+                  --layout_marginLeft="5.5%w";
+                  -- layout_gravity="center";
+                },
+              },
+              {
+                RippleView;
+                layout_height="50dp";
+                layout_width="match_parent";
+                -- orientation="horizontal";
+                --id="重要公告",
+                gravity="center|right";
+                -- text="重要公告",
+
+                {
+                  ImageView;
+                  layout_height="40dp";
+                  layout_width="40dp";
+
+                  --layout_margin="15dp";
+
+                  src="res/AndLuaXY10.png";
+                };
+              };
+            },
+          },
+
+
+
+        };
+      };
+    };
+  };
+};

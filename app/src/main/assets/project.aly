@@ -1,0 +1,74 @@
+{
+  RelativeLayout;
+  layout_width="fill";
+  layout_height="fill";
+  background="#000000";
+  {
+    LinearLayout;
+    layout_height="-1";
+    layout_width="-1";
+  };
+  {
+    Button;
+    layout_height="56dp";
+    layout_marginRight="32dp";
+    background="#ff50f8f8";
+    id="bt";
+    layout_alignParentRight="true";
+    layout_width="56dp";
+    layout_alignParentBottom="true";
+    text="+";
+    textSize="25sp",
+    textColor="#ffffffff",
+    layout_marginBottom="62dp";
+  };
+  {
+    Button;
+    layout_alignLeft="bt";
+    layout_height="56dp";
+    id="bt1";
+    layout_above="bt";
+    background="#ff50f8f8";
+    layout_width="56dp";
+    Visibility="invisible";
+    textColor="#ffffffff",
+    layout_marginBottom="16dp";
+  };
+  {
+    Button;
+    layout_alignLeft="bt";
+    layout_height="56dp";
+    id="bt2";
+    layout_above="bt1";
+    background="#ff50f8f8";
+    layout_width="56dp";
+    textColor="#ffffffff",
+    Visibility="invisible";
+    layout_marginBottom="16dp";
+  };
+  {
+    DrawerLayout;
+    --gravity="center";
+    layout_height="fill";
+    layout_width="fill";
+    id="优化",
+
+    {
+      PullRefreshLayout;
+      backgroundColor=颜色2;
+      layout_height="fill";
+      layout_width="fill";
+      id="sx";
+
+      {
+        ListView;
+        id="项目列表";
+        DividerHeight=0;
+        verticalScrollBarEnabled=false;
+        --  layout_gravity="end";
+        layout_width="fill";
+
+      };
+    };
+  };
+};

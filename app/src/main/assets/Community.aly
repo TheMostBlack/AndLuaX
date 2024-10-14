@@ -1,0 +1,19 @@
+{
+  RelativeLayout;
+  layout_width="fill";
+  layout_height="fill";
+  {
+    PageView;
+    layout_height="100%h";
+    layout_width="fill";
+    id="page";
+    touchEnabled=false;
+    overScrollMode=2;
+    pages={
+      -- layout1,
+      layout2,
+
+      layout4,
+    };
+  };
+};

@@ -1,0 +1,39 @@
+appname="ThomeLua"
+appver="5.0-beta1"
+appcode="5"
+appsdk="15"
+path_pattern=""
+packagename="com.ThomeLua.IDE"
+--theme="Theme_DeviceDefault_Light_NoActionBar"
+app_key=""
+app_channel=""
+developer=""
+description=""
+debugmode=true
+user_permission={
+  "ACCESS_COARSE_LOCATION",
+  "ACCESS_FINE_LOCATION",
+  "ACCESS_NETWORK_STATE",
+  "ACCESS_WIFI_STATE",
+  "BIND_ACCESSIBILITY_SERVICE",
+  "CAMERA",
+  "CHANGE_NETWORK_STATE",
+  "CHANGE_WIFI_STATE",
+  "DOWNLOAD_WITHOUT_NOTIFICATION",
+  "GET_PACKAGE_SIZE",
+  "INSTALL_SHORTCUT",
+  "INTERNET",
+  "KILL_BACKGROUND_PROCESSES",
+  "READ_CONTACTS",
+  "READ_EXTERNAL_STORAGE",
+  "READ_PHONE_STATE",
+  "RECORD_AUDIO",
+  "REQUEST_INSTALL_PACKAGES",
+  "SEND_SMS",
+  "SET_WALLPAPER",
+  "SYSTEM_ALERT_WINDOW",
+  "VIBRATE",
+  "WRITE_CALL_LOG",
+  "WRITE_CONTACTS",
+  "WRITE_EXTERNAL_STORAGE"
+}
