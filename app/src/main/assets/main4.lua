@@ -5,7 +5,7 @@ import "android.widget.*"
 import "android.view.*"
 import "AndLua"
 import "toast"
-activity.setTheme(R.AndLua5)
+--activity.setTheme(R.AndLua5)
 local a=io.open(activity.getLuaDir().."/Verify/set4.XY"):read("*a")
 local ip=a:match("2(.-)"..'"')
 if ip=="开" then
@@ -155,7 +155,7 @@ layout4={
 };
 
 activity.setContentView(loadlayout(layout4))
-隐藏标题栏()
+--隐藏标题栏()
 activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS).setStatusBarColor(颜色1);
 if tonumber(Build.VERSION.SDK) >= 23 then
   activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
@@ -163,7 +163,7 @@ end
 参数,参数1=...
 oi.text=参数
 r.text=参数1
-波纹(mImageView1,0xFFD9D9D9)
+--波纹(mImageView1,0xFFD9D9D9)
 activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE)
 r.OnSelectionChangedListener=function(a,b,c,d)
   if a==true then
