@@ -1236,7 +1236,7 @@ layout13={
                 TextView;
                 layout_gravity="center";
                 layout_marginLeft="5%w";
-                text="加入官方群聊：748285868";
+                text="加入官方群聊：704423243";
                 textColor=颜色c;
               };
             };
@@ -1292,7 +1292,7 @@ function 联系作者.onClick()
   activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("mqqwpa://im/chat?chat_type=wpa&uin=176971467")))
 end
 function 加群.onClick()
-  activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("mqqapi://card/show_pslcard?src_type=internal&version=1&uin=748285868&card_type=group&source=qrcode")))
+  activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("mqqapi://card/show_pslcard?src_type=internal&version=1&uin=704423243&card_type=group&source=qrcode")))
 end
 local c=a:match("2(.-)"..'"')
 local b=a:match("1(.-)"..'"')
